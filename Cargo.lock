@@ -1476,6 +1476,8 @@ name = "ochain-job"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
+ "ochain-attestation",
+ "ochain-registry",
 ]
 
 [[package]]

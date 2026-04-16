@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls *)",
+      "WebSearch",
+      "WebFetch(domain:blog.colosseum.com)",
+      "WebFetch(domain:www.businesswire.com)",
+      "WebFetch(domain:vcomp.eqtylab.io)",
+      "WebFetch(domain:startupstash.com)",
+      "WebFetch(domain:www.gartner.com)",
+      "WebFetch(domain:attestedintelligence.com)",
+      "WebFetch(domain:www.knostic.ai)",
+      "WebFetch(domain:www.mckinsey.com)",
+      "WebFetch(domain:a.storyblok.com)"
+    ]
+  }
+}

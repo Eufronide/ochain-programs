@@ -15,4 +15,6 @@ cpi            = ["no-entrypoint"]
 default        = []
 
 [dependencies]
-anchor-lang = { workspace = true }
+anchor-lang        = { workspace = true }
+ochain-attestation = { path = "../ochain-attestation", features = ["cpi"] }
+ochain-registry    = { path = "../ochain-registry",    features = ["cpi"] }
