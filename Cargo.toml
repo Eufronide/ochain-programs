@@ -5,6 +5,7 @@ members = [
     "programs/ochain-job",
     "programs/ochain-identity",
     "programs/ochain-governance",
+    "cli",
 ]
 resolver = "2"
 

@@ -1,0 +1,29 @@
+[package]
+name    = "ochain-demo"
+version = "0.1.0"
+edition = "2021"
+description = "End-to-end demo of the Ochain operator lifecycle on Solana devnet"
+
+[[bin]]
+name = "ochain-demo"
+path = "src/main.rs"
+
+[dependencies]
+# Solana — pinned to the same family Anchor 0.30.1 targets
+solana-sdk    = "~1.18"
+solana-client = "~1.18"
+
+# Borsh — same version anchor-lang 0.30.1 uses so traits are compatible.
+# In borsh 0.10 the derive macros are bundled; no feature flag needed.
+borsh = "0.10"
+
+# Hashing — SHA-256 for Anchor discriminators, measurement hash, payload hash
+sha2 = "0.10"
+
+# CLI / UX
+clap    = { version = "4", features = ["derive", "env"] }
+anyhow  = "1"
+colored = "2"
+
+# Serialization needed only for reading keypair JSON files
+serde_json = "1"
